@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+
+<body>
+  <main class="min-vh-100 d-flex justify-content-center align-items-center">
+    <section class="container p-4 my-sm-5 mx-auto shadow-lg rounded-lg-3 notification-section">
+
+      <!-- Notification-header-div starts here -->
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="h1-custom">Notifications <span class="badge px-3 badge-custom">3</span></h1>
+        </div>
+        <div>
+          <h2 class="h2-custom hover-state">Mark all as read</h2>
+        </div>
+      </div>
+      <!-- Notification-header-div ends here -->
+
+      <!-- notification-card-div starts here -->
+      <div class="d-flex  gap-3 p-3 mt-4 rounded-3 first-ntn-card">
+        <div>
+          <img src="./assets/images/avatar-mark-webber.webp" alt="" class="profile-img">
+        </div>
+        <div>
+          <h3 class="h3-custom"><strong class="profile-name">Mark Webber </strong>reacted to your recent post <strong
+              class="post-name hover-state">My first tournament
+              today!</strong>
+            <div class="new-msg"></div>
+          </h3>
+          <h4 class="mb-0 h4-custom">1m ago</h4>
+        </div>
+      </div>
+
+      <div class="d-flex gap-3 p-3 mt-4 rounded-3 second-ntn-card">
+        <div>
+          <img src="./assets/images/avatar-angela-gray.webp" alt="" class="profile-img">
+        </div>
+        <div>
+          <h3 class="h3-custom"><strong class="profile-name hover-state">Angela Gray </strong>followed you
+            <div class="new-msg"></div>
+          </h3>
+          <h4 class="mb-0 h4-custom">1m ago</h4>
+        </div>
+      </div>
+
+      <div class="d-flex gap-3 p-3 mt-4 rounded-3 third-ntn-card">
+        <div>
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="" class=" profile-img">
+        </div>
+        <div>
+          <h3 class="h3-custom"><strong class="profile-name">Jacob Thompson </strong>has joined your group
+            <strong class="post-name-blue">Chess Club</strong>
+            <div class="new-msg"></div>
+          </h3>
+          <h4 class="mb-0 h4-custom">1 day ago</h4>
+        </div>
+      </div>
+
+      <div class="d-flex gap-3 p-3 mt-4 ">
+        <div>
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" class=" profile-img">
+        </div>
+        <div id="private-msg-div">
+          <h3 class="h3-custom"><strong class="profile-name">Rizky Hasanuddin </strong>sent you a private message
+          </h3>
+          <h4 class="mb-0 h4-custom">5 day ago</h4>
+          <p class="collapse border border-2 mt-3 rounded-3 p-3 private-msg" id="private-msg">Hello, thanks for setting
+            up the Chess
+            Club. I've
+            been a
+            member
+            for a few
+            weeks now and
+            I'm already having lots of fun and improving my game.</p>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between p-3 mt-4">
+        <div class="d-flex gap-3">
+          <div>
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="" class="profile-img">
+          </div>
+          <div>
+            <h3 class="h3-custom"><strong class="profile-name">Kimberly Smith </strong>commented on your picture
+            </h3>
+            <h4 class="mb-0 h4-custom">1 week ago</h4>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/image-chess.webp" alt="" class="rounded-3 post-image">
+        </div>
+      </div>
+
+      <div class="d-flex  gap-3 p-3 mt-4">
+        <div>
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="" class="profile-img">
+        </div>
+        <div>
+          <h3 class="h3-custom"><strong class="profile-name">Nathan Peterson </strong>reacted to your recent post
+            <strong class="post-name">5 end-game strategies to increase your win rate</strong>
+          </h3>
+          <h4 class="mb-0 h4-custom">2 weeks ago</h4>
+        </div>
+      </div>
+
+      <div class="d-flex gap-3 p-3 mt-4">
+        <div>
+          <img src="./assets/images/avatar-anna-kim.webp" alt="" class=" profile-img">
+        </div>
+        <div>
+          <h3 class="h3-custom"><strong class="profile-name">Anna Kim </strong>left the group
+            <strong class="post-name-blue">Chess Club</strong>
+          </h3>
+          <h4 class="mb-0 h4-custom">2 weeks ago</h4>
+        </div>
+      </div>
+      <!-- notification-card-div starts here -->
+    </section>
+  </main>
+  <!-- Notifications 3
+
+  Mark all as read
+
+  Mark Webber reacted to your recent post My first tournament today!
+  1m ago
+
+  Angela Gray followed you
+  5m ago
+
+  Jacob Thompson has joined your group Chess Club
+  1 day ago
+
+  Rizky Hasanuddin sent you a private message
+  5 days ago
+  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+  I'm already having lots of fun and improving my game.
+
+  Kimberly Smith commented on your picture
+  1 week ago
+
+  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+  2 weeks ago
+
+  Anna Kim left the group Chess Club
+  2 weeks ago -->
+
+  <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer> -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

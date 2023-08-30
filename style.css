@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(assets\fonts\static\PlusJakartaSans-Medium.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(assets\fonts\static\PlusJakartaSans-ExtraBold.ttf) format('ttf');
+    font-style: normal;
+    font-weight:700;
+}
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--White);
+}
+.h1-custom{
+    color:var(--Very-dark-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.h2-custom{
+    font-size:1.2rem;
+    color:var(--Dark-grayish-blue);
+}
+.badge-custom{
+    background-color: var(--Blue);
+}
+.profile-img{
+    width:3.5rem;
+    height: 3.5rem;
+}
+
+.h3-custom{
+    font-size: 1rem;
+    color:var(--Grayish-blue);
+}
+.profile-name{
+    color:var(--Very-dark-blue);
+}
+.post-name{
+    color:var(--Dark-grayish-blue);
+}
+.post-name-blue{
+    color:var(--Blue);
+}
+.h4-custom{
+    font-size: 1rem;
+    color:var(--Grayish-blue);
+}
+.first-ntn-card{
+    background-color: var(--Light-grayish-blue-1);
+}
+.second-ntn-card{
+    background-color: var(--Light-grayish-blue-2);
+}
+.third-ntn-card{
+    background-color: var(--Very-light-grayish-blue);
+}
+.new-msg{
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background-color: var(--Red);
+}
+.private-msg{
+    border-color:var(--Dark-grayish-blue);
+    color:var(--Dark-grayish-blue);
+    display: none;
+}
+.post-image{
+    width:3rem;
+    height:3rem;
+}
+
+.hover-state:hover{
+    color:var(--Blue);
+}
+.h2-custom:hover,
+.post-name-blue:hover,
+.post-image:hover,
+.hover-state:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width:568px){
+    .notification-section{
+        width:45rem;
+        border-radius: 1em;
+    }
+}
